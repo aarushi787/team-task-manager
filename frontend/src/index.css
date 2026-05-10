@@ -185,12 +185,24 @@ input, textarea, select { font-family: inherit; }
 }
 .user-chip .logout-btn {
   color: var(--text-muted);
-  padding: 4px;
-  border-radius: 4px;
-  display: flex;
-  transition: color 0.15s;
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.05);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.15s ease;
 }
-.user-chip .logout-btn:hover { color: var(--red); }
+.user-chip .logout-btn svg {
+  width: 16px;
+  height: 16px;
+}
+.user-chip .logout-btn:hover {
+  color: var(--red);
+  background: rgba(255,0,0,0.08);
+}
 
 .main-content {
   margin-left: var(--sidebar-w);

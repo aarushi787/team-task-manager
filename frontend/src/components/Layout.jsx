@@ -58,6 +58,7 @@ export default function Layout() {
             </div>
             <button className="logout-btn" onClick={handleLogout} title="Sign out">
               {icons.logout}
+              <span>Logout</span>
             </button>
           </div>
         </div>
