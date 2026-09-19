@@ -1,9 +1,10 @@
 # TaskFlow — Team Task Manager
 
-A full-stack team task management app with role-based access control, Kanban boards, and real-time dashboards.
+A full-stack team task management app with role-based access control, Kanban boards, and task dashboards.
 
-**Live URL:** `https://your-app.up.railway.app`  
-**GitHub:** `https://github.com/your-username/team-task-manager`
+**Repository:** [aarushi787/team-task-manager](https://github.com/aarushi787/team-task-manager)
+
+**Status:** development prototype. Authentication and role checks are implemented, but signup authorization requires hardening and regression tests before a public deployment should be treated as secure.
 
 ---
 
@@ -46,7 +47,7 @@ A full-stack team task management app with role-based access control, Kanban boa
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/team-task-manager.git
+git clone https://github.com/aarushi787/team-task-manager.git
 cd team-task-manager
 
 # 2. Install all dependencies
@@ -67,14 +68,9 @@ The first account you create automatically becomes an **Admin**.
 
 ## Deployment on Railway
 
-### Step 1 — Push to GitHub
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/your-username/team-task-manager.git
-git push -u origin main
-```
+### Step 1 — Prepare the repository
+
+Use your own repository or fork, review the signup authorization and role boundaries, and verify the application locally before deployment.
 
 ### Step 2 — Create Railway Project
 1. Go to [railway.app](https://railway.app) → **New Project**
@@ -200,11 +196,6 @@ Task         { id, title, description, status, priority, dueDate, tags,
 
 ---
 
-## Demo Accounts (seed manually or sign up)
+## Local demo accounts
 
-| Role  | Email               | Password   |
-|-------|---------------------|------------|
-| Admin | admin@taskflow.com  | admin123   |
-| Member| member@taskflow.com | member123  |
-
-*(First signup always becomes Admin)*
+No ready-to-use demo credentials are provided here. Create local test accounts through signup; the first account receives the Admin role. Use unique test passwords and synthetic project/task data.
